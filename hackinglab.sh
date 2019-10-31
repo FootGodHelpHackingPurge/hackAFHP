@@ -120,8 +120,8 @@ back
 	;;
 buscar) 
 echo "${undeline}${darkgray}Buscador De Google"
-bash /data/data/com.termux/files/home/hackpurge/modul/buscador.sh 
-back
+bash /data/data/com.termux/files/home/hackAFHP/modul/buscador.sh 
+back                                           
 	;;                         
 banner)
 echo "
