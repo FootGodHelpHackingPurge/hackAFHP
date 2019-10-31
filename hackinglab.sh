@@ -58,6 +58,7 @@ clear
 #funciones
 
 function back {
+	clear
         clear
         bash hackinglab.sh
 }
@@ -81,16 +82,21 @@ echo "
 ┣┓┃┃┃┃┣┫┃┏┻┻┫
 ┗━┻━┻━┻[${underline}${gray}FGH${darkgray}-HACKING-${red}PURGE${normal}]
                             
-"                                                                                   
- 
-
-
-
+"
+echo "
+ 【help Main】  ‣  ↓ 
+"
 }
 
-
 reinicio
-read -p "${green} HACKING > " opc
+read -p "${green} HACKING > " opc 
+clear
+reinicio
+read -p "${aqua} HACKING > " opc1
+              
+while [ $opc != $opc1 ] ;do
+	back
+done   
 case $opc in
         chat)
 echo -n "${dim} username:${darkgray}";
@@ -110,41 +116,38 @@ sleep 4
 figlet $name
 nc -nvlp $port
 nc $ip $port
+back
 	;;
-ip) 
-	id
-	sleep 3
-	back
+buscar) 
+echo "${undeline}${darkgray}Buscador De Google"
+bash /data/data/com.termux/files/home/hackpurge/modul/buscador.sh 
+back
+	;;                         
+banner)
+echo "
+  ╔┷┷┷╗
+   ◣ ◢
+  ↓╚═╝↓
+"
+sleep 6
+back
 	;;
-ch)         
-	
- echo "Loading…"
-     
-sleep 2
- echo "█▒▒▒▒▒▒▒▒▒
-      10%
-	"
-     
-sleep 2
- echo "███▒▒▒▒▒▒▒
-      30%
-	"
-     
-sleep 2
- echo "█████▒▒▒▒▒
-      50%
-	"
-     
-sleep 2
- echo "██████████
-      100%
-	"
-      
-sleep 2
- echo "Hacked *-*"
-                   
+help)
+echo "
+${lightaqua}
+
+-chat-
+-buscar-
+-banner-
+
+${red}recuerde que deven de ir sin [-]
+${normal}
+"
+sleep 5
+clear
+back
 esac
-     
+
 
 
 
