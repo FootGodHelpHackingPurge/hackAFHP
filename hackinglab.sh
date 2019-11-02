@@ -146,6 +146,12 @@ ${normal}
 sleep 5
 clear
 back
+	;;
+irssi)
+	echo "Lider Alejo/"
+	irssi
+
+
 esac
 
 
