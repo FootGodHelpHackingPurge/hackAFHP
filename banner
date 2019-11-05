@@ -1,0 +1,15 @@
+#! /data/data/com.termux/files/usr/bin/bash
+figlet -f smshadow FootGodHelp | lolcat
+PS1='\033[1;91mFGH@hacker[\033[1;93m\W\033[1;91m]: '
+
+
+
+
+
+
+
+fgh(){
+echo "Credits by Al**O"
+sleep 2
+bash /data/data/com.termux/files/home/hackAFHP/hackinglab.sh
+}

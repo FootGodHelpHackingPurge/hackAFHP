@@ -89,16 +89,21 @@ echo "
 }
 
 reinicio
-read -p "${green} HACKING > " opc 
-clear
+read -p "${white} HACKING > " opc 
+clear           
 reinicio
-read -p "${aqua} HACKING > " opc1
-              
+echo "${red}${underline}repita"
+echo "${normal}"               
+read -p "${white} F.G.H.H.P${bold}${green} >> " opc1
+		          
+                
 while [ $opc != $opc1 ] ;do
 	back
 done   
 case $opc in
         chat)
+echo "${green}"
+echo "SIGUE EN PROGAMACION "
 echo -n "${dim} username:${darkgray}";
 read name;
 echo -n "${red} port: "
@@ -122,35 +127,25 @@ buscar)
 echo "${undeline}${darkgray}Buscador De Google"
 bash /data/data/com.termux/files/home/hackAFHP/modul/buscador.sh 
 back                                           
-	;;                         
-banner)
-echo "
-  ╔┷┷┷╗
-   ◣ ◢
-  ↓╚═╝↓
-"
-sleep 6
-back
 	;;
 help)
 echo "
-${lightaqua}
-
--chat-
--buscar-
--banner-
-
-${red}recuerde que deven de ir sin [-]
-${normal}
+chat
+buscar
+irssi
+tmf
 "
 sleep 5
 clear
 back
 	;;
 irssi)
-	echo "Lider Alejo/"
+	echo "CHANNEL FGH"
+sleep 2
 	irssi
-
+	;;
+tmf)
+bash /data/data/com.termux/files/home/hackAFHP/modul/tmf.sh
 
 esac
 
