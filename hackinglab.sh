@@ -129,12 +129,15 @@ bash /data/data/com.termux/files/home/hackAFHP/modul/buscador.sh
 back                                           
 	;;
 help)
+echo "${normal}"
 echo "
 chat
 buscar
 irssi
 tmf
+tool
 "
+
 sleep 5
 clear
 back
@@ -146,7 +149,9 @@ sleep 2
 	;;
 tmf)
 bash /data/data/com.termux/files/home/hackAFHP/modul/tmf.sh
-
+	;;
+tool)
+bash /data/data/com.termux/files/home/hackAFHP/modul/tool.sh
 esac
 
 
